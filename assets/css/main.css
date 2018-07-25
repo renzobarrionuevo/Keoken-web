@@ -3373,7 +3373,7 @@ input, select, textarea {
 				height: 2.25em;
 				line-height: 2.25em;
 				text-align: center;
-				width: 2.25em;
+				width:2.25em;
 			}
 
 		#banner h2 {
@@ -3803,19 +3803,19 @@ input, select, textarea {
 				}
 
 			.wrapper.spotlight.style3 {
-				background-color: #473380;
+				background-color: #5d42a6;
 			}
 
 				.wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23473380%3B' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%235d42a6%3B' /%3E%3C/svg%3E");
 				}
 
 				.wrapper.spotlight.style3:before {
-					box-shadow: inset 0 -1px 0 0 #473380, 0 1px 0 0 #473380;
+					box-shadow: inset 0 -1px 0 0 #5d42a6, 0 1px 0 0 #5d42a6;
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 #473380, 0 1px 0 0 #473380;
+					box-shadow: inset 0 -1px 0 0 #5d42a6, 0 1px 0 0 #5d42a6;
 				}
 
 			.wrapper.spotlight.style4 {
@@ -3864,6 +3864,22 @@ input, select, textarea {
 
 				.wrapper.spotlight.style6:after {
 					box-shadow: inset 0 -1px 0 0 #2d3a69, 0 1px 0 0 #2d3a69;
+				}
+            
+            .wrapper.spotlight.style7 {
+				background-color: #5054b3;
+			}
+
+                .wrapper.spotlight.style7:before, .wrapper.spotlight.style7:after {
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%235054b3%3B' /%3E%3C/svg%3E");
+				}
+
+				.wrapper.spotlight.style7:before {
+					box-shadow: inset 0 -1px 0 0 #5054b3, 0 1px 0 0 #5054b3;
+				}
+
+				.wrapper.spotlight.style7:after {
+					box-shadow: inset 0 -1px 0 0 #5054b3, 0 1px 0 0 #5054b3;
 				}
 
 		@media screen and (max-width: 980px) {
