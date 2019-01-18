@@ -116,7 +116,8 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
-
+	
+		
 /* Type */
 
 	body, input, select, textarea {
@@ -172,9 +173,11 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px rgba(255, 255, 255, 0.35);
+		
 		color: #ffffff;
 		text-decoration: none;
+		outline: none;
+		
 	}
 
 		a:hover {
@@ -190,7 +193,7 @@ input, select, textarea {
 			font-size: 0.8em;
 			font-weight: 700;
 			letter-spacing: 0.1em;
-			margin: 0 0 2em 0;
+			margin: 0 0.5em 0.2em 0;
 			text-transform: uppercase;
 		}
 
@@ -2883,7 +2886,8 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #4c5c96;
+			background-color: #f5a549;
+			
 			box-shadow: none;
 		}
 
@@ -2900,7 +2904,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #45558d;
+				background-color: #4c397e;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -3302,7 +3306,7 @@ input, select, textarea {
 				}
 
 					#menu .links li a:hover {
-						background: #45558d;
+						background: #4c397e;
 					}
 
 		@media screen and (max-width: 736px) {
@@ -3726,19 +3730,19 @@ input, select, textarea {
 			}
 
 		.wrapper.spotlight {
-			background-color: #4c5c96;
+			background-color: #492f8f;
 		}
 
 			.wrapper.spotlight:before, .wrapper.spotlight:after {
-				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c5c96%3B' /%3E%3C/svg%3E");
+				background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23492f8f%3B' /%3E%3C/svg%3E");
 			}
 
 			.wrapper.spotlight:before {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 #492f8f, 0 1px 0 0 #492f8f;
 			}
 
 			.wrapper.spotlight:after {
-				box-shadow: inset 0 -1px 0 0 #4c5c96, 0 1px 0 0 #4c5c96;
+				box-shadow: inset 0 -1px 0 0 #492f8f, 0 1px 0 0 #492f8f;
 			}
 
 			.wrapper.spotlight .inner {
@@ -3787,35 +3791,35 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight.style2 {
-				background-color: #45558d;
+				background-color: #4c397e;
 			}
 
 				.wrapper.spotlight.style2:before, .wrapper.spotlight.style2:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%2345558d%3B' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%234c397e%3B' /%3E%3C/svg%3E");
 				}
 
 				.wrapper.spotlight.style2:before {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 #4c397e, 0 1px 0 0 #4c397e;
 				}
 
 				.wrapper.spotlight.style2:after {
-					box-shadow: inset 0 -1px 0 0 #45558d, 0 1px 0 0 #45558d;
+					box-shadow: inset 0 -1px 0 0 #4c397e, 0 1px 0 0 #4c397e;
 				}
 
 			.wrapper.spotlight.style3 {
-				background-color: #5d42a6;
+				background-color: #6044ac;
 			}
 
 				.wrapper.spotlight.style3:before, .wrapper.spotlight.style3:after {
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%235d42a6%3B' /%3E%3C/svg%3E");
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%236044ac%3B' /%3E%3C/svg%3E");
 				}
 
 				.wrapper.spotlight.style3:before {
-					box-shadow: inset 0 -1px 0 0 #5d42a6, 0 1px 0 0 #5d42a6;
+					box-shadow: inset 0 -1px 0 0 #6044ac, 0 1px 0 0 #6044ac;
 				}
 
 				.wrapper.spotlight.style3:after {
-					box-shadow: inset 0 -1px 0 0 #5d42a6, 0 1px 0 0 #5d42a6;
+					box-shadow: inset 0 -1px 0 0 #6044ac, 0 1px 0 0 #6044ac;
 				}
 
 			.wrapper.spotlight.style4 {
@@ -3980,6 +3984,22 @@ input, select, textarea {
 
 		}
 
+.icono {
+	font-size: 40px;
+	padding-right: 10px;
+	list-style:none;
+}
+.icono2 {
+	font-size: 55px;
+	/*font-size: 50px;*/
+	padding-right: 10px;
+	list-style:none;
+}
+
+a {
+	outline: none;
+	}
+
 /* Footer */
 
 	#footer .inner {
@@ -4127,3 +4147,17 @@ input, select, textarea {
 		}
 
 	}
+
+
+.Diagram img{display:none;}
+.Diagram .width1{display:block;}
+@media (max-width:960px){
+    .Diagram .width2{display:block;}
+    .Diagram .width1{display:none;}
+}
+
+.k-logo{
+
+	height: 100px;
+
+}
