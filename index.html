@@ -10,7 +10,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script defer src="https://use.fontawesome.com/releases/v5.4.1/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
 	</head>
 	<body class="is-preload">
 
@@ -21,7 +24,10 @@
 					<header id="header" class="alt">
 						<h1><a href="index.html">Keoken</a></h1>
 						<nav>
+                            <a href="chinese.html">中文</a>
+                            <a href="index.html">En</a>
 							<a href="#menu">Menu</a>
+                            
 						</nav>
 					</header>
 
@@ -31,24 +37,30 @@
 							<h2>Menu</h2>
 							<ul class="links">
 								<li><a href="index.html">Home</a></li>
-                                <li><a href="#">Whitepaper</a></li>
-                                <li><a href="#">Technical Spec</a></li>
-                                <li><a href="https://github.com/bitprim/bitprim-keoken">Github</a></li>
-								<!--<li><a href="generic.html">Generic</a></li>
+                                <li><a href="https://github.com/bitprim/bitprim-keoken" target="_blank">Github</a></li>
+                                <li><a href="https://github.com/bitprim/bitprim-keoken/blob/master/keoken-whitepaper.md" target="_blank">Whitepaper</a></li>
+								<li><a href="https://github.com/bitprim/bitprim-keoken/blob/master/keoken-technical-specification.md" target="_blank">Technical Spec</a></li>
+								<li><a href="#newcontent" target="_blank">Use cases</a></li>
+                               								<!--<li><a href="generic.html">Generic</a></li>
 								<li><a href="elements.html">Elements</a></li>
 								<li><a href="#">Log In</a></li>
 								<li><a href="#">Sign Up</a></li>-->
 							</ul>
 							<a href="#" class="close">Close</a>
 						</div>
+                        
 					</nav>
 
 				<!-- Banner -->
 					<section id="banner">
 						<div class="inner">
 							<div class="logo"><span class="icon fa-sun-o"></span></div>
-							<h2>Keoken</h2>
+							<h2><img src="images/keoken-logo.png" class="k-logo"></h2>
 							<p>An open protocol for extending blockchain functionality</p>
+							<ul class="actions">
+								<li><a href="#newcontent" class="button primary">Use Cases</a></li>
+								
+							</ul>
 						</div>
 					</section>
 
@@ -58,35 +70,129 @@
 						<!-- One -->
 							<section id="one" class="wrapper spotlight style1">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/keokenrail1.jpg" alt="" /></a>
+									<a class="image"><img src="images/keokenrail1.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">What is Keoken?</h2>
-										<p>Keoken is a second Layer solution that involves a digital asset accounting and secure smart contracts platform. Focused on real world use cases, approaching them in an efficient and simple way, it intends to cover most of the situations that involve transfers of value between parties and the business rules required to run most common activities.</p>
+										<p>Keoken is a second Layer solution that involves a digital accounting asset and secure smart contracts platform. Focused on real world use cases, approaching them in an efficient and simple way, it intends to cover most of the situations that involve transfers of value between parties and the business rules required to run most common activities. Keoken is an open source protocol with a performance reference implementation. It is designed to evolve and adapt over time following market trends and user requirements using a multi-layer dynamic governance system.</p>
 										<!--<a href="#" class="special">whitepaper</a>-->
 									</div>
 								</div>
+								<a name="newcontent"></a>
 							</section>
 
 						<!-- Two -->
+						
 							<section id="two" class="wrapper alt spotlight style2">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/offer1.jpg" alt="" /></a>
+									<a class="image"><img src="images/offer1.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">What do we offer?</h2>
-										<p>Keoken fills the gap between reliable cryptocurrency protocols and less reliable smart contracts platforms. We offer you the possibility to create your own asset with its own set of rules defined by you on a platform that you control with your vote.</p>
+										<p>We offer you the possibility to create your own asset with its own set of rules defined by you on a platform that you control with your vote. Keoken has an account based approach in order to be more user friendly and provide multi-asset simplified transaction capabilities. Additionally it fills the gap between reliable cryptocurrency protocols and less reliable smart contracts platforms by defining a small set of simple transaction formats that can be the backbone in the construction of smart contracts.</p>
 										<!--<a href="#" class="special">Technical Spec</a>-->
+										<style type="text/css">
+											/*<![CDATA[*/
+											a{
+											cursor: pointer;
+											}
+
+											#Uno,#Dos,#Tres{
+											display: none;
+											}
+											/*]]>*/
+										</style>
+										<script type="text/javascript">
+											//<![CDATA[
+											function contenido(cual){
+											var capas = new Array("Uno", "Dos");
+											var i;
+											
+												for(i in capas){
+													console.log(document.getElementById(capas[i]).style.display);
+													if(capas[i] == cual && (document.getElementById(capas[i]).style.display == 'none' || document.getElementById(capas[i]).style.display == '' )){
+													document.getElementById(capas[i]).style.display = 'block';
+													
+													}else{
+													document.getElementById(capas[i]).style.display = 'none';
+													}
+												}
+											}
+											//]]>
+										</script>
+																				
+										
+										<a onclick="contenido('Uno')" class="special">use cases</a>
+										<div id="Uno">
+												
+											<li><a href="use_case_keo.html">Use of Keo</a></li>
+											<li><a href="use_case_movetoken.html" target="_blank">Mobility Keo-Token</a></li>
+											<li><a href="use_case_parktoken.html" target="_blank">Amusement Park Keo-Token</a></li>
+										</div>
 									</div>
 								</div>
+									
 							</section>
-
+							
 						<!-- Three -->
+						
 				            <section id="three" class="wrapper spotlight style3">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/wallet1.jpg" alt="" /></a>
+									<a class="image"><img src="images/wallet1.jpg" alt="" /></a>
 									<div class="content">
-										<h2 class="major">Keoken Wallet</h2>
-										<p>The Keoken wallet is a service that allows users to keep track of all the tokens they have on the Keoken protocol. It also allows the operation with the Keoken protocol creating and sending tokens to other Bitcoin Cash addresses.</p>
-										<a href="http://wallet.keoken.hanchon.io/" class="special">Visit</a>
+										<h2 class="major">New Keoken's Services</h2>
+										<p>With Keoken Wallet, you can receive and send Keo through the Bitcoin Cash test network. Also available is a new explorer adapted to track Keoken transactions through the BCH testnet and a faucet to receive your first Keo.
+										</p>
+										<style type="text/css">
+											/*<![CDATA[*/
+											a{
+											cursor: pointer;
+											}
+
+											#Uno,#Dos,#Tres{
+											display: none;
+											}
+											/*]]>*/
+											</style>
+										<script type="text/javascript">
+											//<![CDATA[
+											function contenido(cual){
+											var capas = new Array("Uno", "Dos");
+											var i;
+											
+												for(i in capas){
+													console.log(document.getElementById(capas[i]).style.display);
+													if(capas[i] == cual && (document.getElementById(capas[i]).style.display == 'none' || document.getElementById(capas[i]).style.display == '' )){
+													document.getElementById(capas[i]).style.display = 'block';
+													
+													}else{
+													document.getElementById(capas[i]).style.display = 'none';
+													}
+												}
+											}
+											//]]>
+											</script>
+																				
+										
+										<a onclick="contenido('Uno')" class="special">Install Wallet</a>
+										<div id="Uno">
+												
+												<a href="https://itunes.apple.com/ar/app/keoken/id1439839227?l=en&mt=8" target="_blank" ><img src="images/apple.png" style="width: 35px" style="padding: 10px"></a>	
+												<a href="https://play.google.com/store/apps/details?id=com.bitprim.keoken" target="_blank" ><img src="images/google-play.png" style="width: 35px" style="padding: 10px"></a>
+												<a href="apk/46700000.apk" target="_blank" ><img src="images/apk-formato-de-archivo.png" style="width: 35px" style="padding: 10px"></a>
+															
+										</div>
+																				
+										<a onclick="contenido('Dos')"  class="special">Instructions</a>
+										<div id="Dos">
+											<a class="Diagram">
+												<img src="images/Blank Diagram.png" style="height:250px" class="width1">
+												<img src="images/Blank Diagram 2.png" style="width:300px" alt="" class="width2">
+												
+											</a>	
+											
+												
+										</div>
+										<a href="https://wallet.testnet.keoken.io" target="_blank" class="special">Create Asset</a>
+										<a href="https://explorer.testnet.keoken.io/#/pages/index" target="_blank" class="special">&nbsp &nbsp &nbsp Explorer</a>		
 									</div>
 								</div>
 							</section>
@@ -96,37 +202,37 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Blockchain second layer platform</h2>
-									<p>Decentralized technologies promise to facilitate our lives but they are struggling with escalating and accommodating to our necessities. This is our platform's main reason of existence.</p>
+									<p>Decentralized technologies promise to facilitate our lives. But they are struggling with scalability and finding a way to adapt to our necessities. This is our platform's main reason of existence.</p>
 									<section class="features">
 										<article>
-											<a href="#" class="image"><img src="images/simple2.jpg" alt="" /></a>
+											<a class="image"><img src="images/simple2.jpg" alt="" /></a>
 											<h3 class="major">Simplicity</h3>
 											<p2>Our platform offers a small set of simple transaction formats that covers the majority of real life commercial exchanges. Smart Contracts can be constructed in cases where more complexity is needed.</p2>
 											<!--<a href="#" class="special">Learn more</a>-->
 										</article>
                                          <article>
-											<a href="#" class="image"><img src="images/efficiency3.jpg" alt="" /></a>
+											<a class="image"><img src="images/efficiency3.jpg" alt="" /></a>
 											<h3 class="major">Efficiency</h3>
 											<p2>Second layers offer a more efficient way of using the blockchain. Additionally, our protocol interpreter guarantees the optimization of computing resources.</p2>
 											<!--<a href="#" class="special">Learn more</a>-->
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/flex3.jpg" alt="" /></a>
+											<a class="image"><img src="images/flex3.jpg" alt="" /></a>
 											<h3 class="major">Flexibility</h3>
 											<p2>Keoken is designed to dynamically adapt to changing market conditions by including rules and processes to mold any aspect of the Keoken ecosystem. We promote and encourage parties to freely define their own exchange rules.</p2>
 											<!--<a href="#" class="special">Learn more</a>-->
 										</article>
                                        	<article>
-											<a href="#" class="image"><img src="images/security3.jpg" alt="" /></a>
+											<a class="image"><img src="images/security3.jpg" alt="" /></a>
 											<h3 class="major">Security</h3>
 											<p2>Our security model relies on the strength of Bitcoin Cash's POW, building a multi-layer dynamic governance system on top of it and giving asset owners control over the rules that affect their assets.</p2>
 											<!--<a href="#" class="special">Learn more</a>-->
 										</article>
 									</section>
 									<ul class="actions">
-                                        <li><a href="https://github.com/bitprim/bitprim-keoken" class="button"><span class="icon fa-github-alt"></span>&nbsp; Github</a></li>
-										<li><a href="#menu" class="button"><span class="icon fa-file-text-o"></span>&nbsp; Whitepaper</a></li>
-                                        <li><a href="#menu" class="button"><span class="icon fa-file-code-o"></span>&nbsp; Technical Spec</a></li>
+                                        <li><a href="https://github.com/bitprim/bitprim-keoken" target="_blank" class="button"><span class="icon fa-github-alt"></span>&nbsp; Github</a></li>
+										<li><a href="https://github.com/bitprim/bitprim-keoken/blob/master/keoken-whitepaper.md" target="_blank" class="button"><span class="icon fa-file-text-o"></span>&nbsp; Whitepaper</a></li>
+                                        <li><a href="https://github.com/bitprim/bitprim-keoken/blob/master/keoken-technical-specification.md" target="_blank" class="button"><span class="icon fa-file-code-o"></span>&nbsp; Technical Spec</a></li>
                                        
 									</ul>
                                     <!--<h4>More content</h4>
@@ -143,11 +249,11 @@
                 
                 <section id="three" class="wrapper spotlight style7">
 								<div class="inner">
-									<a href="#" class="image"><img src="images/Bitprim_twitter_naranja.jpg" alt="" /></a>
+									<a href="https://www.bitprim.com/" target="_blank" class="image"><img src="images/Bitprim_twitter_naranja.jpg" alt="" /></a>
 									<div class="content">
 										<h2 class="major">BUILT BY BITPRIM TEAM</h2>
-										<p>Since 2014, our multidisciplinary team has been creating tools that help and attract developers to boost a massive adoption of cryptocurrencies. Bitprim's main pillars are transparency, professionalism, customer service and collaboration with other teams. Keoken is an open protocol with a perfomant reference implementation built from scratch leveraging Bitprim-Node advanced features. Bitprim headquarters are based in Argentina.</p>
-										<a href="https://www.bitprim.com/" class="special">Learn more</a>
+										<p>Since 2014, our multidisciplinary team has been creating tools that help and attract developers to boost a massive adoption of cryptocurrencies. Bitprim's main pillars are transparency, professionalism, customer service and collaboration with other teams. Keoken is an open protocol with a performance reference implementation built from scratch leveraging Bitprim-Node advanced features. Bitprim headquarters are based in Argentina.</p>
+										<a href="https://www.bitprim.com/" target="_blank" class="special">Learn more</a>
 									</div>
 								</div>
 							</section>
@@ -178,21 +284,22 @@
 								</ul>
 							</form>--> 
                             <ul class="contact">
-                                <li class="fa-envelope"><a href="">info@keoken.io</a></li>
-								<li class="fa-phone">(+54) 11-5365 7265</li>
-								<li class="fa-home"><a href="https://www.google.com/maps/place/Piso+17,+Oficina+109,+Esmeralda+950,+C1007ABL+CABA/@-34.5970399,-58.380855,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccac9e71b8b77:0x67dadb1cbd7e37ee!8m2!3d-34.5970399!4d-58.3786663">
+                                <li class="fa-home"><a href="https://www.google.com/maps/place/Piso+17,+Oficina+109,+Esmeralda+950,+C1007ABL+CABA/@-34.5970399,-58.380855,17z/data=!3m1!4b1!4m5!3m4!1s0x95bccac9e71b8b77:0x67dadb1cbd7e37ee!8m2!3d-34.5970399!4d-58.3786663" target="_blank">
 									Esmeralda 950, Piso 17, Oficina 109<br />
 									Ciudad Autónoma de Buenos Aires<br />
-                                    Argentina</a>
-								</li>
+                                    Argentina</a></li>
+                                <li class="fa-envelope">info@bitprim.org</li>
+                               
+								<!--<li class="fa-phone">(+54) 11-5365 7265</li>-->
+								
 								<!--<li class="fa-facebook"><a href="#">facebook.com/keokenprotocol</a></li>-->
 								<!--<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>-->
 							</ul>
                             <ul class="contact">
-								<li class="fa-twitter"><a href="https://twitter.com/KeokenIO">twitter.com/KeokenIO</a></li>
-                                <li class="fa-telegram"><a href="https://t.me/joinchat/AA0d4g_mQWyJoW6ZWYWEkA">Telegram group</a></li>
-                                <li class="fa-wechat"><a href="https://t.me/joinchat/AA0d4g_mQWyJoW6ZWYWEkA">Wechat group</a></li>
-                                <li class="fa-slack"><a href="https://t.me/joinchat/AA0d4g_mQWyJoW6ZWYWEkA">Slack group</a></li>
+                                <li class="fa-twitter"><a href="https://twitter.com/KeokenIO" target="_blank">twitter.com/KeokenIO</a></li>
+								<li class="fa-telegram"><a href="https://t.me/joinchat/AA0d4g_mQWyJoW6ZWYWEkA" target="_blank">Telegram group</a></li>
+                                <li class="fa-wechat"><a href="images/wechatkeoken.png" target="_blank">Wechat group</a></li>
+                                <li class="fa-slack"><a href="https://bitprim.slack.com/messages/CBX5H7HAL/details/" target="_blank">Slack group</a></li>
 								<!--<li class="fa-facebook"><a href="#">facebook.com/keokenprotocol</a></li>-->
 								<!--<li class="fa-facebook"><a href="#">facebook.com/keokenprotocol</a></li>-->
 								<!--<li class="fa-instagram"><a href="#">instagram.com/untitled-tld</a></li>-->
@@ -200,7 +307,7 @@
 						
                             
 							<ul class="copyright">
-								<li>&copy; Bitprim Argentina Srl All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+								<li>&copy; Bitprim Argentina All rights reserved.</li><li>Design: <a href="http://html5up.net" target="_blank">HTML5 UP</a></li>
 							</ul>
 						</div>
 					</section>
